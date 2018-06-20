@@ -1,0 +1,35 @@
+#================================================================================================================================================================#
+#                                                         Configuration des Options du Plugin SkyManager                                                         #
+#                                                                                                                                                                #
+#                                                                                                                                                                #
+#                                                                           Version 1.0                                                                          #
+#                                                                                                                                                                #
+#                                                                                                                                                                #
+#                                      Vous pouvez les modifier comme bon vous semble, mais ne pas s'approprier le plugin !                                      #
+#                                                                                                                                                                #
+#                                                                                                                                                                #
+#                                                               Plugin developper par CanardConfit                                                               #
+#================================================================================================================================================================#
+
+
+#Cette option permet d'activer ou non le module pour voir le contenu d'un fichier
+enable-file-view: true
+
+
+#Cette liste est la liste des extentions que le plugin n'essayera pas de lire (ces exemples sont des extentions qui ne peuvent pas etre lu comme un texte)
+ban-file-view:
+  - jar
+  - gz
+  - dat
+  - dat_old
+  - lock
+  - mca
+
+#/!\ Attention si tu change de langue, les messages et la configuration serons supprimé et remplacer par celle dans la langue selectionner /!\
+
+#Le plugin n'est pas dans ta langue ? Personalise l'integralité des messages du plugin et
+#partage les sur la page du plugin pour que tout le monde en profite !
+lang: 'FR'
+
+#Si vous voulez changer de langue en restartant le serveur, mettez sur true et ne toucher plus
+changeonstart: false

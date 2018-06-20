@@ -1,0 +1,8 @@
+name: SkyManager
+version: 1.0
+author: CanardConfit
+main: ch.canardconfit.skymanager.SkyManager
+
+commands:
+  skymanager:
+    description: open FileManager

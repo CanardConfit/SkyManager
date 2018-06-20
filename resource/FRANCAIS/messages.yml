@@ -1,0 +1,99 @@
+#================================================================================================================================================================#
+#                                                         Configuration des Messages du Plugin SkyManager                                                        #
+#                                                                                                                                                                #
+#                                                                                                                                                                #
+#                                                                           Version 1.0                                                                          #
+#                                                                                                                                                                #
+#                                                                                                                                                                #
+#                                      Vous pouvez les modifier comme bon vous semble, mais ne pas s'approprier le plugin !                                      #
+#                                                                                                                                                                #
+#                                                                                                                                                                #
+#                                                               Plugin developper par CanardConfit                                                               #
+#================================================================================================================================================================#
+
+
+plugin:
+  #Ces messages apparaissent quand le plugin s'allume, s'eteint ou si l'on a fait la commande de relaod du plugin.
+  start: 'SkyManager >> Plugin Activer !'
+  stop: 'SkyManager >> Plugin Desactiver !'
+  reload-progress: '&b&lSky&4&lManager &c>> &eReload en progression...'
+  reload-success: '&b&lSky&4&lManager &c>> &aReload reussi !'
+
+
+items:
+  #Cette categorie est pour les items que tu peux customisé sur le plugin.
+
+
+  next-page:
+    #Cette item apparait quand un repertoire contiens plus de fichier que ne peux afficher le GUI, il permet de changer de page pour voir le reste des fichiers.
+    #%page% = prochaine page.
+    name: '&6Prochaine Page : %page%'
+    lore: '&3Page %page% du repertoire'
+
+
+  back-racine:
+    #Cette item apparait quand vous etes dans un repertoire, il permet de revenir au repertoire racine du serveur.
+    #%racine% = nom du serveur dans le fichier server.properties.
+    name: '&cRevenir a &b%racine%'
+    lore: ' '
+
+
+errors:
+  #Ces messages apparaissent quand une erreur arrive.
+  dont-permission: '&b&lSky&4&lManager &c>> &eTu n as pas la permission d executer cette commande !'
+  console-execute: '&b&lSky&4&lManager &c>> &eIl n y a que les joueurs qui peuvent utiliser cette commande !'
+
+
+inventory:
+  #Cette categorie est pour les informations globale du GUI, initial-name est pour le nom du GUI.
+  initial-name: '&bSM> '
+
+
+file-view:
+  #Cette categorie est pour le module file-view.
+
+
+  exit-file:
+    #Ce message apparait quand vous quittez un fichier avec la commande "exit".
+    #%file% = nom du fichier.
+    line0: '&6&l&m---------------[&r&b&lSky&4Manager&6&l&m]---------------'
+    line1: '&eTu sors du fichier : &b%file%'
+    line2: '&6&l&m---------------[&r&b&lSky&4Manager&6&l&m]---------------'
+
+
+  info-file:
+    #Ce message apparait a chaque entaite d'une lecture de fichier.
+    #%file% = nom du fichier.
+    #%last-page% = Dernière page du fichier.
+    line0: '&6&l&m---------------[&r&b&lSky&4Manager&6&l&m]---------------'
+    line1: '&eNom du fichier : &b%file% &e(&aDernière page &7: &a%last-page%&e)'
+    line2: '&6&l&m---------------[&r&6&lFile&6&l&m]---------------'
+
+
+  enter-page:
+    #Ce message apparait quand le fichier fait plus de 10 lignes de long, cela permet d'acceder au reste du fichier.
+    #%number% = page suivante.
+    line0: '&6&l&m---------------[&r&6&lFile&6&l&m]---------------'
+    line1: '&aEntre %number% pour acceder a la page %number% ou entre exit'
+    line2: '&6&l&m---------------[&r&b&lSky&4Manager&6&l&m]---------------'
+
+
+  end-file:
+    #Ce message apparait quand c'est la fin du fichier.
+    line0: '&6&l&m---------------[&r&6&lFile&6&l&m]---------------'
+    line1: '&eFin du fichier'
+    line2: '&6&l&m---------------[&r&b&lSky&4Manager&6&l&m]---------------'
+
+
+  exit-file-command:
+    #Ce message apparait quand vous executez une commande en mode file-view (quand vous regardez un fichier).
+    line0: '&6&l&m---------------[&r&b&lSky&4Manager&6&l&m]---------------'
+    line1: '&eVous sortez du fichier car vous avez executer une commande !'
+    line2: '&6&l&m---------------[&r&b&lSky&4Manager&6&l&m]---------------'
+
+
+  command-doesnt-exist:
+    #Ce message apparait quand la commande a l'interieur du menu file-view n'existe pas.
+    line0: '&6&l&m---------------[&r&b&lSky&4Manager&6&l&m]---------------'
+    line1: '&4TCette commande n existe pas !'
+    line2: '&6&l&m---------------[&r&b&lSky&4Manager&6&l&m]---------------'
